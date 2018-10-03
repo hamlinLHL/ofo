@@ -1,0 +1,101 @@
+/* pages/warn/index.wxss */
+
+.container {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.title {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 50rpx;
+  background-color: #f2f2f2;
+  font-size: 30rpx;
+}
+
+.choose {
+  background-color: #fff;
+  width: 100%;
+}
+
+.choose .choose-grids {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50rpx;
+  justify-content: space-around;
+}
+
+.choose .choose-grids .grid {
+  width: 45%;
+  height: 100rpx;
+  border: 2rpx solid #b9dd08;
+  text-align: center;
+  line-height: 100rpx;
+  margin-top: 36rpx;
+  border-radius: 6px;
+}
+
+.choose .choose-grids .grid:first-child,
+.choose .choose-grids .grid:nth-of-type(2) {
+  margin: 0;
+}
+
+.action .action-photo {
+  background-color: #fff;
+  padding-top: 30rpx;
+  padding-left: 50rpx;
+  padding-bottom: 20rpx;
+}
+
+.action .action-photo image {
+  position: relative;
+  height: 120rpx;
+  width: 120rpx;
+  vertical-align: top;
+  overflow: visible;
+  margin-right: 25rpx;
+  margin-bottom: 10rpx;
+  border: 1rpx solid #ccc;
+}
+
+.action .action-photo image icon {
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+}
+
+.action .action-photo .add {
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  margin-left: 5rpx;
+  border: 2rpx dotted #ccc;
+  color: #ccc;
+  font-size: 24rpx;
+  line-height: 120rpx;
+  text-align: center;
+}
+
+.action-input {
+  margin-top: 30rpx;
+  padding-left: 50rpx;
+  background-color: #fff;
+  width: 100%;
+}
+
+.action-input input {
+  width: 85%;
+  padding: 40rpx 0 40rpx 0;
+}
+
+.action-input input:first-child {
+  border-bottom: 2rpx solid #ccc;
+}
+.action-submit{
+  margin-top: 30rpx;
+  padding: 20rpx;
+  border-radius: 7px;
+  color: black;
+  font-weight: 700;
+}

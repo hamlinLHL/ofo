@@ -1,0 +1,9 @@
+/* pages/index/index.wxss */
+.contain{
+  width: 100%;
+  height: 100vh;
+}
+.contain map{
+  width: 100%;
+  height:100%;
+}

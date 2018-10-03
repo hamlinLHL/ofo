@@ -1,0 +1,4 @@
+<!--pages/index/index.wxml-->
+<view class='contain'>
+<map id='myMap' show-location longitude='{{longitude}}' latitude ='{{latitude}}' scale='{{scale}}' controls='{{controls}}' bindcontroltap='bindcontroltap'/>
+</view>

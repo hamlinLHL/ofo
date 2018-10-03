@@ -1,0 +1,9 @@
+<!--pages/charge/index.wxml-->
+<view class='container'>
+  <view class='title'>
+    <text>请输入充值金额</text>
+  </view>
+  <view class='input'>
+  <input bindinput='input' value='{{value}}' placeholder='冲得多送的多哦'></input></view>
+  <button bindtap='charge'>充值</button>
+</view>
