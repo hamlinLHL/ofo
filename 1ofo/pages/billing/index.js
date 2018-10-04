@@ -41,41 +41,62 @@ Page({
     let h = 0;
     let m = 0;
     let s = 0;
-    this.timer = setInterval(() => {
-      
+    let t = 0;
+    this.timer=setInterval(()=>{
+      t++
+      h=Math.floor(t/3600);
+      m=Math.floor((t%3600)/60);
+      s = (t % 3600) % 60;
       if(s<10){
-        s='0'+s;
+        s="0"+s
+      } 
+      if (m < 10) {
+        m = "0" + m
+      } 
+      if (h < 10) {
+        h = "0" + h
       }
       this.setData({
-        second: s
-      });
-      s++;
-      if (s == 60) {
-        s = 0;
-        m++;
-        if(m<10){
-          m='0'+m
-        }
-        setTimeout(() => {
-          this.setData({
-            mini: m,
-          })
-        }, 1000)
-        if(m==60){
-          m=0;
-          h++;
-          if(h<10){
-            h='0'+h;
-          }
-          setTimeout(()=>{
-            this.setData({
-              hour:h
-            },1000)
-          })
-        }
-      }
+        hour: h,
+        mini: m,
+        second: s,
+      })
+    },1000)
+    // this.timer = setInterval(() => {
+      
+    //   if(s<10){
+    //     s='0'+s;
+    //   }
+    //   this.setData({
+    //     second: s
+    //   });
+    //   s++;
+    //   if (s == 60) {
+    //     s = 0;
+    //     m++;
+    //     if(m<10){
+    //       m='0'+m
+    //     }
+    //     setTimeout(() => {
+    //       this.setData({
+    //         mini: m,
+    //       })
+    //     }, 1000)
+    //     if(m==60){
+    //       m=0;
+    //       h++;
+    //       if(h<10){
+    //         h='0'+h;
+    //       }
+    //       setTimeout(()=>{
+    //         this.setData({
+    //           hour:h
+    //         },1000)
+    //       })
+    //     }
+    //   }
 
-    }, 1000)
+    // }, 1000)
 
 
   },
